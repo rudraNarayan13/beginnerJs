@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document manipulation</title>
+</head>
+<body onload="console.log('Welcome to my home page!');" 
+  directly manipulating using js and dom
+ style="background-color: rgb(63, 62, 47);color: white;font-size: large;">
+    <h1 style="color: rgb(85, 172, 91);">Note on DOM</h1>
+    <p>
+        <b>difference between innerText VS innerContent</b> <br>
+        innerText:: shows the text which is visible on website <br>
+        innerContent:: Shows all data or text inside html Document, wheather it is hidden by using some method or not . <br>
+
+        innerHTML :- it returns the total HTML format and everything Html contain with all syntax and tags . <br>
+        <p>
+            <b>Difference between nodeList  , HTMLcollection</b> <br>
+        nodeList is not array . but slightly like array and some properties of array work on it.
+        so ... we can covert both nodeList and HTMLcollection in to array and then perform our task.
+        </p>
+        <p>how "append child" is better than "innerText/innerHTML" ??<br>DSA question ... optimisation issue related </p>
+        <H2>see video 34 VIMP</H2>
+          
+
+    </p>
+</body>
+ </html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST of DOM 2</title>
+</head>
+<style>
+    
+    .container {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+button {
+  width: 200px;
+}
+
+</style>
+<body>
+    
+    <div class="container">
+        <textarea class="story" placeholder="click set text content"></textarea>
+        <button id="set-text" type="button">Set text content</button>
+        <button id="clear-text" type="button">Clear text content</button>
+      </div>
+
+      <script>
+        const c = document.querySelector("#clear-text");
+        const a = document.querySelector(".story");
+        const b = document.querySelector("#set-text");
+        
+        b.addEventListener(
+            "click", ()=>{
+                a.innerHTML=" Shreema Behera"
+            }
+        );
+        c.addEventListener(
+            "click", ()=>{
+                a.innerHTML=" "
+            }
+        )
+        </script>
+</body>
+
+</html>
+ 
+  
