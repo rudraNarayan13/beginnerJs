@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e">
+    <diagram id="EDLxvKR-YuKUM5YsBbpX" name="Page-1">
+        <mxGraphModel dx="149" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Var1= mango" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="200" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="var2=var1&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="160" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;strokeWidth=1;" parent="1" source="4" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="function 1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="120" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=1;" parent="1" source="5" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="fn2 = fn1&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="80" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="stack memory" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="235" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="calculations of functions and varible declared&amp;nbsp;&lt;br&gt;stored here&amp;nbsp;" style="whiteSpace=wrap;html=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="60" width="350" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Heap memory" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="285" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="here a copy of var1 data is assigned to var 2 . any changes in var 2 wont affect var1&amp;nbsp;&lt;br&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rotation=-75;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="130" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="here data directly&lt;br&gt;conected from&amp;nbsp;&lt;br&gt;heap memory in&amp;nbsp;&lt;br&gt;fn2" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="20" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;br&gt;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;in stack memory a copy of original dat is provided .. so any changes d&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;one .. that done on copied data , original data is safe .&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;but in heap memory orginal data get manipulated or we can say reference&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;or adress od original data is accecable.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="510" width="580" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="best&amp;nbsp; explained in hitesh chai aur code yt playlist v&lt;br&gt;video 10" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="316" y="440" width="290" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
