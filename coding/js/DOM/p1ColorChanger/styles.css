@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;width: 100%;
+    background-color: #9c9c9c;
+    
+}
+body>h1,h2{
+    border: 2px solid rgb(0, 0, 0) ;
+    width: 50%;
+}
+.firstDiv{
+    height: 200px;width: 500px;
+    background-color: black;
+    /* position: absolute; */
+    position: relative;
+    left: 30%;
+    margin-top: 2.5%;
+    margin-bottom: 10%;
+    /* margin: 10%; */
+    color: white;
+    
+}
+.secDiv{
+    height: 100px;width: 300px;
+    background-color: rgb(235, 20, 20);
+    position: absolute;
+    /* left: 50%;    */
+    right: 10%;
+
+}
+.thirdDiv{
+    height: 50px;width: 100px;
+    background-color: rgb(16, 75, 43);
+    position: absolute;
+    left: 10%;  
+    /* means : left ru 10% durare chadiki raha of your parent div 
+    and meausrement hauchi perticular div ra right or left ru ... mane jadi right:10% dia hela , child div ra(jaha ku move kara hauchi tara ) right side ta , parent div ra righr side thu kete dureiki rahiba seta fix kare .*/
+
+}
+#flexDiv{
+    border: 2px solid white;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* IN flexbox , "justify content" used for horizental(WIDTH) arrangements AND "align-item" is used for height wise decoration  */
+    /* text-align: center; */
+}
+.flexboxBox{
+    height: 20px;width: 150px;
+    border: 2px solid white;
+    background-color: bisque;
+}
+#mainDivinFlex > h1{
+    display: flex;
+    justify-content: center ;
+    
+} 
+
+[rudra]{
+    color:blue;
+}
+
+ul li:hover {color:red}
+/* pseduo selector */
+ul li b{
+    color:rgb(240, 209, 3) ;
+}
+[Specificity]{
+    color: blue;
+}
