@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height: 100%;
+    /* background-color: aliceblue; */
+    color: white;
+    font-size: large;
+}
+#clock{
+    height: 50px;
+    width: 250PX;
+    background-color:#fff;
+    /* padding: 15px; */
+    border-radius: 20px;
+    color: black;
+    font-family: monospace;
+    font-size: 35px;
+    text-align: center;
+}
