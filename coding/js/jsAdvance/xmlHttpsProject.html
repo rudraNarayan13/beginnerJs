@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Information Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4d4a4a;
+  }
+
+  .card {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(167 ,167, 167);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+  }
+
+
+  label {
+    font-weight: bold;
+    color: #555;
+  }
+  .photo{
+            
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+
+    }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h2>User Information Form</h2>
+        <img src="" alt="" class="photo"> <br>
+      <label for="name">Name:</label> <p type = "text" id ="name"></p>
+      <!-- <input type="text" id="name" name="name" > -->
+      
+      <label for="age">Age:</label>
+      <!-- <input type="number" id="age" name="age" > -->
+      <p id="age"></p>
+      <label for="email">Email:</label>
+      <!-- <input type="email" id="email" name="email" > -->
+      <p id="email"></p>
+      <button id="btn">NEXT</button>
+
+
+     
+  </div>
+
+
+    
+    <!-- (basic netwrking knowldge is needed for better under standing )
+        api are work as a middle man between two nodes / sysytem
+        reading api is dificult and time taking . using json formatter we can make api readable .
+
+        xmlHttps :=> an example of API Through wich we send request to server and get desireable result
+        StateCodes == 0,1,2,3,4
+        code 0 : client created by .open() method :: UNSENT
+        code 1 : open() has been called ::           OPENED
+        code 2 : send() has been called ::           HEADER RECEIVE
+        code 3 : processing is goping on::           LOADING 
+        code 4 : operation completed ::               DONE  -->
+
+  <script>
+
+            let data ;
+            let dataObject;
+            const xhr = new XMLHttpRequest(); // calling api method used in old js
+                // xhr.open(method , adress of api )
+                    xhr.open('GET' , 'https://randomuser.me/api/');
+                    // console.log(`here`);
+                    xhr.onreadystatechange= function(){
+                        if(xhr.readyState===4){
+                             data =JSON.parse(this.responseText);
+                          dataObject=data.results[0] // accesing the data frm api 
+
+                             // adding name 
+                    let nameArea  = document.getElementById('name')
+                            let name = ` ${dataObject.name.first} ${dataObject.name.last} `
+                            // console.log(name);
+                            nameArea.innerHTML=name
+                            
+                        
+                            // email
+                        let emailArea = document.getElementById('email')
+                            let email = dataObject.email
+                            emailArea.innerHTML=email
+
+                            //age
+                        let ageArea  = document.getElementById('age')
+                        let age = dataObject.dob.age
+                        ageArea.innerHTML=age
+                        //     //gender 
+                        //    let genderArea  = document.getElementById('gender')
+                        //     // loction
+                        //    let locationArea = document.getElementById('location')
+                            
+                        
+                        // adding image of user
+                            const photo = dataObject.picture.large // extracting img frm api 
+                            const image= document.querySelector('.photo') // creatting a img tag
+                            image.src=`${photo}` // setting the source of imge 
+                            // document.body.appendChild(image) // adding img tag on html
+                            
+                        }
+                      
+                    }
+                    // // adding name 
+                    // let nameArea  = document.getElementById('name')
+                    //         let name = ` ${dataObject.name.first} ${dataObject.name.last} `
+                    //         // console.log(name);
+                    //         nameArea.innerHTML=name
+                    xhr.send();
+                      const btn =document.getElementById('btn')
+                      btn.addEventListener('click', ()=>{window.onload})
+    </script>
+
+
+</body>
+</html>
